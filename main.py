@@ -1,5 +1,3 @@
-print("Hello")
-fruit = "apple"
-print("fruit")
+user_name = input("Enter your name:")
 
-nothing = None
+print("Your name is " + user_name)
