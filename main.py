@@ -1,3 +1,26 @@
-user_age = int(input("How old are you? "))
 
-print(user_age + 12)
+import random
+
+secret = random.randint(1,30)
+guess = None
+
+
+while True:
+    guess = int(input("What is your guess? "))
+
+    if guess == secret:
+        print(f"yes, it is {secret}")
+        break
+
+    hint = None
+    if guess > secret:
+        hint = "smaller"
+    else:
+        hint = "bigger"
+
+    print(f"try something {hint}")
+
+
+
+
+
